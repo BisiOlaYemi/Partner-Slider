@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+<body>    <div class="container">
+        <h2 class="text-center font-weight-bold">Our Partners</h2>
+    </div>
+    <section class="customer-logos slider">
+        <div class="slide"><img src="" alt="logo"></div>
+        <div class="slide"><img src="" alt="logo"></div>
+        <div class="slide"><img src="" alt="logo"></div>
+        <div class="slide"><img src="" alt="logo"></div>
+        <div class="slide"><img src="" alt="logo"></div>
+        <div class="slide"><img src="" alt="logo"></div>
+        <div class="slide"><img src="" alt="logo"></div>
+    </section>
+
+</body>
+
+<script>
+
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrow: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow: 4
+                }
+
+                }, {
+                    breakpoint: 520,
+                    setting:{
+                        slidesToShow: 3
+                    }
+                
+            }]
+
+        });
+    });
+
+</script>
+
+</html>
